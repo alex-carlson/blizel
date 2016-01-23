@@ -1,0 +1,174 @@
+.wrap{
+  overflow-x: hidden;
+}
+
+.main{
+  min-height: 100vh;
+}
+
+section{
+  &.splash{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffac89+0,ff5959+100 */
+background: #ff5959; /* Old browsers */
+background: -moz-linear-gradient(left,  #ff8888 0%, #ff5959 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ff8888 0%,#ff5959 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ff8888 0%,#ff5959 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+    h1{
+      margin-top: 0;
+      position: absolute;
+      left: 100px;
+      top: 40%;
+      font-size: 3.5em;
+      line-height: 1.4em;
+    }
+    .logo{
+      position: absolute;
+      bottom: 30px;
+      left: 100px;
+      background-image: url("../images/blizel_brand_v2.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 60px;
+      height: 30px;
+    }
+    ul{
+      list-style-type: none;
+      position: absolute;
+      right: 100px;
+      bottom: 30px;
+
+      li{
+        float: left;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+
+        a{
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+.sidebar-primary{
+  width: 15%;
+  position: fixed;
+  left: 80px;
+  top: 0px;
+
+  svg{
+    margin-top: 30px;
+    width: 100px;
+    height: auto;
+    margin-bottom: 50px;
+    float: left;
+
+    g{
+      fill: $red;
+    }
+  }
+  h3{
+    color: $red;
+    font-size: 16px;
+    font-family:  "Proxima Bold", sans-serif;
+    border-bottom: solid 2px $red;
+    float: left;
+    clear: both;
+  }
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    clear: both;
+
+    li{
+      cursor: pointer;
+
+      a{
+        font-family:  "Proxima Bold", sans-serif;
+        color: #000;
+
+        &:hover{
+          border-bottom: solid 2px $red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  a{
+    color: $red;
+  }
+  & > a{
+    font-family:  "Proxima Bold", sans-serif;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 2px;
+
+    &:hover{
+      margin-bottom: 0px;
+      text-decoration: none;
+      border-bottom: solid 2px $red;
+    }
+  }
+}
+content.main{
+  margin-left: 25%;
+  margin-top: 180px;
+  width: 50%;
+
+  aside{
+    position: fixed;
+    width: 15%;
+    right: 80px;
+    top: 180px;
+    background-color: #fff;
+
+    ul{
+      list-style-type: none;;
+      padding-left: 0;
+
+      li{
+        width: 100%;
+        margin-top: 40px;
+        position: relative;
+
+        &::before{
+          font-family: "Proxima Bold", sans-serif;
+          position: absolute;
+          top: -20px;
+        }
+
+        &.title{
+          margin-top: 0;
+        }
+        &.agency{
+          &::before{
+            content: "Agency";
+          }
+        }
+        &.project_lead{
+          &::before{
+            content: "Project Lead";
+          }
+        }
+        &.design_lead{
+          &::before{
+            content: "Design Lead";
+          }
+        }
+        &.background{
+          &::before{
+            content: "Background";
+          }
+        }
+      }
+    }
+  }
+}

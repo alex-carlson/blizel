@@ -1,1 +1,19 @@
+@font-face {
+  font-family: 'Proxima Bold';
+  src: url('../fonts/ProximaNova-Extrabold.otf'); /* IE9 Compat Modes */
+}
 
+@font-face {
+  font-family: 'Proxima Light';
+  src: url('../fonts/ProximaNova-Light.otf'); /* IE9 Compat Modes */
+}
+
+body{
+  font-family: "Proxima Light", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Proxima Bold", sans-serif;
+}
+
+$red: #FF8787;
